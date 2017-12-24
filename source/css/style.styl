@@ -92,6 +92,12 @@ pre {
 article {
     margin: 30px 0
 }
+
+.article+.article {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 30px;
+}
+
 .article-title {
     text-align: center;
     font-weight: 400;
@@ -102,16 +108,38 @@ article {
         margin: 0;
     }
 }
+
 .article-meta {
     text-align: center;
     margin: 5px 0 15px 0;
-    font-size: 14px 
-    opacity: 0.6
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.article-more-link {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.more-link-button {
+    padding: 5px;
+    border-bottom: 1px solid #666;
+    transition: all .3s;
+    -moz-transition: all .3s; /* Firefox 4 */
+    -webkit-transition: all .3s; /* Safari and Chrome */
+    -o-transition: all .3s; /* Opera */
+}
+.more-link-button:hover{
+    color: #fff;
+    background-color: #666
 }
 
 .article-content {
     line-height: 1.45em;
 }
+
+
 
 
 /*footer*/
