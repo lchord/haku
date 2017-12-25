@@ -123,7 +123,9 @@ article {
     text-align: center;
     margin: 5px 0 15px 0;
     font-size: 14px;
-    opacity: 0.6;
+    time {
+        color: #a9a9a9;
+    }
 }
 
 .article-more-link {
@@ -160,12 +162,12 @@ article {
     }
     time {
         float: left;
-        opacity: 0.6;
+        color: #a9a9a9;
     }
     h1 {
     font-size: 16px;
     font-weight: 400;
-    margin-left: 60px;
+    margin-left: 3.8em;
     }
     article {
         margin: 5px 0;
@@ -182,7 +184,10 @@ article {
     padding: 15px 0;
 }
 
-
+::selection {
+    background: #232323;
+    color: #fff;
+}
 
 @import "_variables.styl";
 @import "_highlight.styl";
