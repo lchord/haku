@@ -4,6 +4,7 @@ menu:
   Archives: /archives
   About: /about
 rss: /atom.xml
+favicon: /image/favicon.ico
 
 # Content
 excerpt_link: Read More
@@ -11,3 +12,6 @@ excerpt_link: Read More
 # Comment
 # Disqus
 disqus_shortname: 
+
+# fontawesome_url
+fontawesome_url: https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css

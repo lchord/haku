@@ -94,7 +94,7 @@ article {
 }
 
 .article+.article {
-    border-top: 1px solid #f2f2f2;
+    border-top: 1px dashed #f2f2f2;
     padding-top: 50px;
 }
 
@@ -132,26 +132,81 @@ article {
     margin-top: 20px;
     font-size: 14px;
     text-align: center;
+    a {
+        color: $main-color !important;
+    }
+}
+
+.article-more-link a:hover {
+    color: #fff !important;
 }
 
 .more-link-button {
     padding: 5px;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid $main-color;
     transition: all .3s;
     -moz-transition: all .3s; /* Firefox 4 */
     -webkit-transition: all .3s; /* Safari and Chrome */
     -o-transition: all .3s; /* Opera */
 }
-.more-link-button:hover{
-    color: #fff;
-    background-color: #666
+.more-link-button:hover {
+    background-color: $main-color;
 }
 
 .article-content {
     line-height: 1.45em;
+    a {
+        color: #a9a9a9;
+    }
+    a:hover {
+            color: $main-color;
+    }
     img {
         width: 100%;
     }
+}
+
+.article-tag-list {
+    margin: 30px 0;
+    padding-left: 0 !important;
+    li {
+        list-style: none;
+        display: inline;
+    }
+    a {
+        margin: 0.5em;
+        padding: 2px;
+        color:#a9a9a9;
+        font-size: 14px;
+    }
+    a:before {
+        content: "#";
+    }
+    a:hover {
+        border-bottom: 1px dashed #a9a9a9;
+    }
+}
+
+#article-nav{
+    display: block;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.article-nav-item {
+    font-size: 20px;
+    font-weight: 600;
+    i {
+        padding: 0 5px;
+    }
+}
+
+.article-nav-item:hover {
+    opacity: 0.6; 
+}
+
+#article-nav-older {
+    float: right;
 }
 
 /*archives*/
@@ -167,13 +222,31 @@ article {
     h1 {
     font-size: 16px;
     font-weight: 400;
-    margin-left: 3.8em;
+    margin-left: 4em;
     }
     article {
         margin: 5px 0;
     }
 }
 
+/*comments*/
+#comments {
+    margin: 30px 0;
+}
+
+/*page nav*/
+#page-nav {
+    margin: 60px 0 10px 0;
+    text-align: center;
+    .page-number, .prev, .next {
+        bottom: 1px;
+        margin: 5px;
+        padding: 10px;
+    }
+    .current, .page-number:hover, .prev:hover, .next:hover {
+        border-bottom: 1px solid #555;
+    }
+}
 
 /*footer*/
 #footer {
@@ -181,7 +254,7 @@ article {
     font-size: 16px;
     line-height: 1.45em;
     text-align: center;
-    padding: 15px 0;
+    padding: 30px 0;
 }
 
 ::selection {

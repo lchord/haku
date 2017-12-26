@@ -20,7 +20,12 @@
         <%- post.content %>
       <% } %>
     </div>
-
+    <footer class="article-footer">
+    <% if (!index){ %>
+    <%- partial('post/tag') %>
+    <%- partial('post/nav') %>
+  <% } %>
+</footer>
 </article>
 
 <%- partial('comment/comment') %>
