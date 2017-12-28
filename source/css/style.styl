@@ -244,16 +244,20 @@ article {
         font-weight: 500;
     }
     time {
-        float: left;
         color: #a9a9a9;
     }
     h1 {
+        display: inline;
         font-size: 16px;
         font-weight: 400;
-        margin-left: 4em;
-    }
-    .archive-article-title-full {
         margin-left: 1em;
+        transition: all .3s;
+        -moz-transition: all .3s; /* Firefox 4 */
+        -webkit-transition: all .3s; /* Safari and Chrome */
+        -o-transition: all .3s; /* Opera */
+        &:hover {
+            opacity: .6;
+        }
     }
     article {
         margin: 5px 0;
