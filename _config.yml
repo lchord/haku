@@ -18,5 +18,5 @@ baidu_site:
 # baidu tongji (the string after "hm.js?")
 baidu_tongji: 
 
-# fontawesome_url
+# fontawesome_url (or path to fontawesome 4.x)
 fontawesome_url: https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
