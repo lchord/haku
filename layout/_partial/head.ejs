@@ -26,6 +26,10 @@
     <meta name="baidu-site-verification" content="<%= theme.baidu_site %>" />
   <% } %>
 
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+  
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
